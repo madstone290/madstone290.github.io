@@ -16,7 +16,8 @@ minimal_mistakes_skin    : "default"
 # minimal_mistakes_skin values: "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko-KR"
+# locale                   : "ko-KR"
+locale                   : "ko"
 title                    : "Madstone&apos;s house"
 title_separator          : "-"
 subtitle                 : "Programming blog"

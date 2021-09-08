@@ -4,8 +4,14 @@ main:
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Categories"
     url: "/Categories"
+    lang: 
+      en: "Categories"
+      ko: "카테고리"
   - title: "Tags"
     url: "/Tags"
+    lang: 
+      en: "Tags"
+      ko: "태그"
   - title: "About"
     url: https://mmistakes.github.io/minimal-mistakes/about/
   #- title: "Sample Posts"
@@ -14,3 +20,12 @@ main:
   #  url: /collection-archive/
   - title: "Sitemap"
     url: /sitemap/
+
+caption:
+  Categories:
+    en: "Category"
+    ko: "카테고리"
+  Tags:
+    en: "Tags"
+    ko: "태그"
+    
