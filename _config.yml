@@ -112,7 +112,7 @@ author:
   name             : "Gyuho Lee"
   avatar           : "/assets/images/avatar.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am a **motion seeking** person."
-  location         : "Somewhere, Korea"
+  location         : "Korea"
   email            : "madstone290@gmail.com"
   links:
     - label: "GitHub"
@@ -137,15 +137,18 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/madstone290"
+    - label: "사이트맵"
+      icon: "fas fa-sitemap"
+      url: "sitemap.xml"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/madstone290"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
