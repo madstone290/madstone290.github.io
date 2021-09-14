@@ -61,7 +61,7 @@ comments:
     theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
   staticman:
     branch               : "master"
-    endpoint             : "http://staticman-for-madstone290.herokuapp.com/v3/entry/github/"
+    endpoint             : "https://madstone290-staticman.herokuapp.com/v3/entry/github/"
 reCaptcha:
   siteKey                :
   secret                 :
