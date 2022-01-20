@@ -26,6 +26,16 @@ OS: centos7
 sudo setsebool -P httpd_can_network_connect 1
 ```
 
-
+## 윈도우에서 NVM(Node Version Manager) 사용하기
+* [NVM 깃허브](https://github.com/coreybutler/nvm-windows/releases)
+* nvm-setup.zip을 다운로드 및 설치한다.
+```
+# 특정 버전 노드 설치
+nvm install <버전>
+# 특정 버전 노드 사용하기
+nvm use <버전>
+# 설치된 노드 목록확인
+nvm list 
+```
 
 
