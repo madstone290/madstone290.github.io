@@ -1,0 +1,85 @@
+:root {
+}
+
+.mes-legend {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.mes-legend-left {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+}
+
+.mes-legend-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 4px;
+    flex: 1;
+}
+
+.tr-legend-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tr-legend-item-color {
+    width: 20px;
+    height: 20px;
+}
+
+.tr-legend-item-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.tr-legend-item-label {
+    padding: 0px 4px;
+}
+
+.tr-tooltip {
+    visibility: hidden;
+    opacity: 0;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    z-index: 100;
+    padding: 10px;
+    background-color: #ffffcc;
+    color: #996633;
+    text-align: left;
+
+    /* Position the tooltip */
+    position: fixed;
+}
+
+.tr-entity-point-event {
+    user-select: none;
+}
+
+.tr-entity-range-event {
+    /* border: 1px solid #996633; */
+    border-radius: 8px;
+    user-select: none;
+}
+
+.tr-global-point-event {
+    user-select: none;
+}
+
+.tr-global-range-event {
+    border-radius: 8px;
+    user-select: none;
+}
+

@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>Timeline Chart</title>
+    <meta charset="utf-8">
+
+<body>
+    <script src="../dist/core/timeline-chart.js"></script>
+    <script src="../dist/variance/mes-data.js"></script>
+    <script src="../dist/variance/mes-legend.js"></script>
+    <script src="../dist/variance/mes-timeline-chart.js"></script>
+    <script src="../dist/samples/multi-mes-sample.js"></script>
+    <script src="js/lib/dayjs.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/timeline-chart.css">
+    <link rel="stylesheet" type="text/css" href="css/mes-timeline-chart.css">
+
+    <style>
+        .tc-flex {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .tc-row-flex {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .tc-root-container {
+            width: 50%;
+            height: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .legend-container {
+            height: 40px;
+        }
+        .tc-container {
+            height: calc(100% - 40px);
+        }
+    </style>
+
+    <div class="tc-flex">
+        <div class="tc-row-flex">
+            <div class="tc-root-container">
+                <div id="legend-container1" class="legend-container"></div>
+                <div id="tc-container1" class="tc-container" style="flex: 1;"></div>
+            </div>
+            <div class="tc-root-container">
+                <div id="legend-container2" class="legend-container"></div>
+                <div id="tc-container2" class="tc-container" style="flex: 1;"></div>
+            </div>
+        </div>
+        <div class="tc-row-flex">
+            <div class="tc-root-container">
+                <div id="legend-container3" class="legend-container"></div>
+                <div id="tc-container3" class="tc-container" style="flex: 1;"></div>
+            </div>
+            <div class="tc-root-container">
+                <div id="legend-container4" class="legend-container"></div>
+                <div id="tc-container4" class="tc-container" style="flex: 1;"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
