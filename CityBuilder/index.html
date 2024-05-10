@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/CityBuilder/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+
+  <script type="module" crossorigin src="/CityBuilder/assets/index-BsWymIQ8.js"></script>
+  <link rel="stylesheet" crossorigin href="/CityBuilder/assets/index-bssX-Agu.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Three.js adds a `canvas` element to this element-->
+        <div id="canvas"></div>
+        <div id="loading">
+            LOADING...
+        </div>
+        <div id="win">
+            <div>축하합니다!</div>
+            <div>목표에 도달했습니다.</div>
+            <div id="win-play-time"></div>
+        </div>
+        <div id="ui">
+            <div id="title-bar">
+                <span class="title">City Builder</span>
+                <button class="mode-btn selected" data-mode="simulation">시뮬레이션 모드</button>
+                <button class="mode-btn" data-mode="control">컨트롤 모드</button>
+                <div id="show-message-control" class="control">
+                    <label>메시지 보기</label>
+                    <input type="checkbox" id="show-message" />
+                </div>
+                <div class="score">
+                    <span class="score-title">스코어</span>
+                    <span id="current-score">300</span>
+                    <span>/</span>
+                    <span id="target-score">500</span>
+                </div>
+                <div class="play-time">
+                    <span class="play-time-title">시간</span>
+                    <span id="play-time-value" class="play-time-value">00:00</span>
+                </div>
+
+            </div>
+            <div id="tool-bar">
+                <button id='select-btn' class="toolbar-btn icon-btn selected" data-action="select" title="선택">
+                    <img class="icon" src="/CityBuilder/assets/icons/select-color.png">
+                </button>
+                <button id='bulldoze-btn' class="toolbar-btn icon-btn" data-action="erase" title="파괴">
+                    <img class="icon" src="/CityBuilder/assets/icons/bulldozer-color.png">
+                </button>
+                <button id='residential-btn' class="toolbar-btn icon-btn" data-action="house" title="주택">
+                    <img class="icon" src="./assets/icons/Icon4.svg">
+                </button>
+                <button id='commercial-btn' class="toolbar-btn icon-btn" data-action="office" title="사무실">
+                    <img class="icon" src="./assets/icons/Icon8.svg">
+                </button>
+                <button id='industrial-btn' class="toolbar-btn icon-btn" data-action="factory" title="공장">
+                    <img class="icon" src="./assets/icons/Icon1.svg">
+                </button>
+                <button id='power-plant-btn' class="toolbar-btn icon-btn" data-action="skyscraper" title="고층빌딩">
+                    <img class="icon" src="./assets/icons/Icon5.svg">
+                </button>
+                <button id='power-line-btn' class="toolbar-btn icon-btn" data-action="temple" title="사원">
+                    <img class="icon" src="./assets/icons/Icon7.svg">
+                </button>
+            </div>
+            <div id="side-bar">
+                <div id="command">
+                    <div id="title">Command</div>
+                    <div id="command-list">
+                        <button id="upgrade-btn" class="icon-btn" title="업그레이드">
+                            <img class="icon" src="./assets/icons/arrow-up.png">
+                        </button>
+                        <button id='downgrade-btn' class="icon-btn" title="다운그레이드">
+                            <img class="icon" src="./assets/icons/arrow-down.png">
+                        </button>
+                        <button id='destroy-btn' class="icon-btn" title="파괴">
+                            <img class="icon" src="./assets/icons/bulldozer-color.png">
+                        </button>
+                    </div>
+                </div>
+                <div id="info">
+                    <div id="title">Information</div>
+                    <div id="details">
+                        <div id="population">Population: 0</div>
+                        <div id="employment">Employment: 0</div>
+                        <div id="money">Money: $0</div>
+                    </div>
+                </div>
+            </div>
+            <div id="instructions">
+                <div>선택: 좌클릭</div>
+                <div>카메라 회전: 우클릭</div>
+                <div>카메라 이동: 휠 클릭 or 컨트롤 + 우클릭</div>
+                <div>카메라 줌: 휠 스크롤</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
