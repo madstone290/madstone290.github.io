@@ -9,6 +9,7 @@ Helix 형태로 그림을 배치하는 예제
 휠을 이용해 카메라를 다음/이전 그림으로 이동할 수 있다.
 */
 let containerEl = document.getElementById('container');
+let containerWrapperEl = document.getElementById('container-wrapper');
 let camera;
 let scene;
 let webGLRenderer;
@@ -180,7 +181,7 @@ function init() {
                 break;
         }
     });
-    containerEl.addEventListener("wheel", (event) => {
+    containerWrapperEl.addEventListener("wheel", (event) => {
         if (0 < event.deltaY) {
             if (isPaintingRemained()) {
                 event.preventDefault();
@@ -193,7 +194,7 @@ function init() {
         console.log(currentPaintingIndex);
     });
     let touchPos = { x: 0, y: 0 };
-    containerEl.addEventListener("touchstart", (event) => {
+    containerWrapperEl.addEventListener("touchstart", (event) => {
         if (isPaintingRemained()) {
             const touch = event.touches[0];
             touchPos.x = touch.clientX;
@@ -203,7 +204,7 @@ function init() {
             event.stopPropagation();
         }
     });
-    containerEl.addEventListener("touchend", (event) => {
+    containerWrapperEl.addEventListener("touchend", (event) => {
         const touch = event.changedTouches[0];
         const dx = touch.clientX - touchPos.x;
         const dy = touch.clientY - touchPos.y;
