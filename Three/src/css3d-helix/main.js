@@ -51,7 +51,7 @@ function createPaintingCSS(painting) {
     frame.style.height = 'fit-content';
     //frame.style.backgroundColor = 'rgba(0,127,127,' + (Math.random() * 0.5 + 0.25) + ')';
     const img = document.createElement('img');
-    img.src = `/Three/assets/images/paintings/${painting.file}`;
+    img.src = `/THREE/assets/images/paintings/${painting.file}`;
     img.style.objectFit = 'contain';
     img.style.width = '100%';
     img.style.margin = '0';
